@@ -19,6 +19,7 @@ public class User {
     public String toString() {
         return name + " " + " " + age + " " + weight + " " + height;
     }
+
     public float getWeight(){
         return weight;
     }
@@ -27,4 +28,11 @@ public class User {
         return height;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
 }

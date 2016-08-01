@@ -26,16 +26,15 @@ public class MyApp {
             int ageint = Integer.parseInt(age);
             float weightflo = Float.parseFloat(weight);
             float heightflo = Float.parseFloat(height);
+
             User user1 = new User(name,ageint,weightflo,heightflo);
 
             float bmi;
             bmi = weightflo/(heightflo*heightflo);
 
             Map<String, Object> model = new HashMap();
-            model.put("name", name);
             model.put("bmi", bmi);
-            model.put("age",age);
-            model.put("weight",weightflo);
+            model.put("user", user1);
             return  new ModelAndView(model, "result.ftl");
         }, new FreeMarkerEngine());
 
