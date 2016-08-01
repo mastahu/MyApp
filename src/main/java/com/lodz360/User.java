@@ -16,6 +16,7 @@ public class User {
         this.height=height/100;
     }
 
+
     public String toString() {
         return name + " " + " " + age + " " + weight + " " + height;
     }

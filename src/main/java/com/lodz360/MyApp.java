@@ -28,9 +28,11 @@ public class MyApp {
             float weightflo = Float.parseFloat(weight);
             float heightflo = Float.parseFloat(height);
 
+            /*int i=0;
+            i = usersList.size();
+            String j = i.toString();*/
 
             User user1 = new User(name,ageint,weightflo,heightflo);
-
 
             usersList.add(user1);
 
@@ -43,6 +45,9 @@ public class MyApp {
         }, new FreeMarkerEngine());
 
         System.out.println(usersList.size());
+        for (int i = 0; i < 4; i++) {
+            System.out.println(i);
+        }
 
 
 
