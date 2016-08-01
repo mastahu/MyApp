@@ -7,4 +7,5 @@ That'syour BMI : ${user.name}, age: ${user.age}, W: ${user.weight} H: ${user.hei
 User: ${user}
 <br>
 ${user.bmi}
+${checkbmi}
 </html>
