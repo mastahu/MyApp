@@ -44,7 +44,7 @@ public class User {
     public String checkbmi() {
 
         if (getBmi()>= 30) {
-            return  "You're in the obese range! You have a huge problem, you must watch your diet and start exercises";
+            return  "You're in the obese range! You have a huge problem, you must watch your diet and start exercising";
         }
         else if (getBmi() >= 25 ){
             return "You're in the overweight range! You should watch your diet and start exercises";
