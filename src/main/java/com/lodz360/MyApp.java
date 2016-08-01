@@ -29,11 +29,13 @@ public class MyApp {
             User user1 = new User(name,ageint,weightflo,heightflo);
 
             float bmi;
-            bmi = weightflo/heightflo*heightflo;
+            bmi = weightflo/(heightflo*heightflo);
 
             Map<String, Object> model = new HashMap();
             model.put("name", name);
-            model.put("bmi",bmi);
+            model.put("bmi", bmi);
+            model.put("age",age);
+            model.put("weight",weightflo);
             return  new ModelAndView(model, "result.ftl");
         }, new FreeMarkerEngine());
 
