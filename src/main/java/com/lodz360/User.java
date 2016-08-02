@@ -37,6 +37,7 @@ public class User {
         return age;
     }
 
+
     public float getBmi() {
         return weight/(height*height);
     }
