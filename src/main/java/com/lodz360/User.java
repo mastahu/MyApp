@@ -12,6 +12,11 @@ public class User {
     public User(String name, int age, float weight, float height){
         this.name=name;
         this.age=age;
+       /*  if(age>120)
+       {
+            System.out.println("what's out!");
+            throw new RuntimeException("If you really have more than 120 years just enjoy your life, don't worry about your diet ;)");
+        }*/
         this.weight=weight;
         this.height=height/100;
     }

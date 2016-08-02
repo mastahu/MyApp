@@ -50,9 +50,7 @@ public class MyApp {
         }, new FreeMarkerEngine());
 
         System.out.println(usersList.size());
-        for (int i = 0; i < 4; i++) {
-            System.out.println(i);
-        }
+
 
 
 
