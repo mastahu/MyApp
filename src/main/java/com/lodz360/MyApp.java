@@ -27,13 +27,18 @@ public class MyApp {
             int ageint = Integer.parseInt(age);
             float weightflo = Float.parseFloat(weight);
             float heightflo = Float.parseFloat(height);
+            User user1 = new User(name,ageint,weightflo,heightflo);
 
             /*int i=0;
             i = usersList.size();
             String j = i.toString();*/
+            /*int i=usersList.size();
+            i++;*/
 
-            User user1 = new User(name,ageint,weightflo,heightflo);
 
+/*
+            usersList[i]=usersList.add(user1);
+*/
             usersList.add(user1);
 
             user1.checkbmi();
