@@ -23,33 +23,23 @@ public class MyApp {
             String weight = request.queryParams("weight");
             String height = request.queryParams("height");
 
-
             int ageint = Integer.parseInt(age);
+
             float weightflo = Float.parseFloat(weight);
             float heightflo = Float.parseFloat(height);
-            User user1 = new User(name,ageint,weightflo,heightflo);
+            User user = new User(name,ageint,weightflo,heightflo);
 
-            /*int i=0;
-            i = usersList.size();
-            String j = i.toString();*/
-            /*int i=usersList.size();
-            i++;*/
-
-
-/*
-            usersList[i]=usersList.add(user1);
-*/
-            usersList.add(user1);
-
-            user1.checkbmi();
+            usersList.add(user);
+            System.out.println(usersList);
+            System.out.println(usersList.size());
 
             Map<String, Object> model = new HashMap();
-            model.put("user", user1);
-            model.put("checkbmi",user1.checkbmi());
+            model.put("user", user);
+            model.put("checkbmi",user.checkbmi());
+            model.put("userListAsString", usersList.toString());
             return  new ModelAndView(model, "result.html");
         }, new FreeMarkerEngine());
 
-        System.out.println(usersList.size());
 
 
 
