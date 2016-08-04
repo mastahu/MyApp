@@ -37,15 +37,8 @@ public class MyApp {
             model.put("user", user);
             model.put("checkbmi",user.checkbmi());
             model.put("userListAsString", usersList.toString());
-            return  new ModelAndView(model, "result.html");
+            return  new ModelAndView(model, "result.ftl");
         }, new FreeMarkerEngine());
-
-
-
-
-
-
-
 
 
     }
