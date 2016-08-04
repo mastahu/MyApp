@@ -23,7 +23,13 @@ public class MyApp {
             String weight = request.queryParams("weight");
             String height = request.queryParams("height");
 
-            int ageint = Integer.parseInt(age);
+            int ageint;
+            try {
+                 ageint = Integer.parseInt(age);
+            } catch (NumberFormatException ex) {
+                 ageint = -1;
+                 response.redirect("/signin.html");
+            }
 
             float weightflo = Float.parseFloat(weight);
             float heightflo = Float.parseFloat(height);
