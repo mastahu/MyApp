@@ -47,7 +47,7 @@ public class User {
         return weight/(height*height);
     }
 
-    public String checkbmi() {
+    public String checkbmi() throws BMIException {
 
         if (getBmi()>= 30) {
             return  "You're in the obese range! You have a huge problem, you must watch your diet and start exercising";
@@ -59,7 +59,7 @@ public class User {
         }else if (getBmi() > 5){
             return  "You're in the underweight range. You could use more good calories";
         }else {
-            return "Somethink went wrong, check your information again!";
+            throw  new BMIException();
         }
 
     }
